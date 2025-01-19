@@ -7,14 +7,14 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 
 }
 
 .container{
-  width:50%;
+  width:35%;
   height: 300px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
