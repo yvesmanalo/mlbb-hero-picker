@@ -1,4 +1,4 @@
-const heroName = document.querySelector('.hero');
+const heroName = document.querySelector('.hero-name');
 const heroRole = document.querySelector('.hero-role');
 const btn = document.querySelector('.btn');
 
@@ -380,10 +380,10 @@ heroList = [{
 },{
   hero: "Melissa",
   role: "Marksman"
-},{
-
 }]
 
-const pick = btn.addEventListener("click",function(){
-  
+btn.addEventListener("click",function(){
+  let random = Math.floor(Math.random()*heroList.length);
+  heroName.innerText = heroList[random].hero;
+  heroRole.innerText = heroList[random].role;
 })
